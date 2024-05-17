@@ -1,9 +1,11 @@
-# This file contains common pin mappings for the BIGTREETECH Manta M8P V2.0
+
+# This file contains common pin mappings for the BIGTREETECH Manta M8P V2.0 for an Anycubic Kobra 2 Plus Printer
 # To use this config, the firmware should be compiled for the
 # STM32H723 with a "128KiB bootloader" "25 MHz crystal"
 # and "USB (on PA11/PA12)", "CAN bus (on PD0/PD1)" or Serial (on USART1 PA10/PA9).
+# Do not forget to Rename this file to "printer.cfg"
 
-# See docs/Config_Reference.md for a description of parameters.
+[include mainsail.cfg]
 
 # Motor1
 [stepper_x]
@@ -19,7 +21,6 @@ position_min : -5
 homing_speed : 60.000000
 second_homing_speed : 15.000000
 homing_retract_dist : 10
-virtrual_endstop : 0
 
 # Motor2
 [stepper_y]
@@ -62,8 +63,8 @@ dir_pin: PB3
 enable_pin: !PB6
 heater_pin: PA0 # HE0
 sensor_pin: PB0 # T0
-microsteps : 16.000000
-rotation_distance: - 40
+microsteps : 16
+rotation_distance: 40
 nozzle_diameter : 0.400000
 filament_diameter : 1.750000
 sensor_type : EPCOS 100K B57560G104F
@@ -155,9 +156,8 @@ heater_temp : 50
 fan_speed : 1
 
 # Fan2
-[heater_fan fan2]
 [controller_fan board_cooling_fan]
-pin: PF6
+pin : PF6
 stepper : stepper_x,stepper_y,stepper_z,extruder
 fan_speed : 1
 idle_speed : 0
@@ -184,7 +184,7 @@ heater : extruder,heater_bed
 #tachometer_pin: PC1
 
 [mcu]
-serial: /dev/serial/by-id/usb-Klipper_Klipper_firmware_12345-if00
+canbus_uuid: 9c85f75f7f1b
 
 [printer]
 kinematics: cartesian
@@ -192,7 +192,6 @@ max_velocity: 500
 max_accel: 10000
 max_z_velocity: 16
 max_z_accel: 3000
-minimum_z_position : -20.000000
 square_corner_velocity : 15.000000
 
 ########################################
@@ -200,12 +199,11 @@ square_corner_velocity : 15.000000
 ########################################
 
 # Motor1
-#[tmc2209 stepper_x]
+[tmc2209 stepper_x]
 uart_pin: PC13
 #diag_pin: PF4 
 interpolate : 1
 sense_resistor : 0.075
-microsteps : 16
 driver_sgthrs : 100
 run_current : 1.4
 hold_current : 0.7
@@ -220,7 +218,6 @@ interpolate : 1
 run_current : 1.8
 hold_current : 1.0
 sense_resistor : 0.075
-microsteps : 16
 driver_sgthrs : 105
 run_current: 0.800
 stealthchop_threshold: 0
@@ -234,12 +231,11 @@ run_current : 1.8
 hold_current : 1.0
 uart_address : 1
 sense_resistor : 0.075
-microsteps : 16
 driver_sgthrs : 100
 stealthchop_threshold : 99999
 
 # Motor4
-[tmc2209 stepper_]
+[tmc2209 extruder]
 uart_pin: PB5
 #diag_pin: PF1
 interpolate : 1
@@ -247,7 +243,6 @@ run_current : 0.8
 hold_current : 0.4
 uart_address : 2
 sense_resistor : 0.075
-microsteps : 16
 driver_sgthrs : 10
 stealthchop_threshold : 99999
 ## Motor5
@@ -374,8 +369,8 @@ aliases:
 
 [adxl345]
 cs_pin: PA15
+spi_speed : 5000000
 spi_bus: spi3a
-adxl_type : lis2dw12
 axes_map : x,y,z
 rate : 1600
 
@@ -396,3 +391,4 @@ rate : 1600
 #[hall_filament_width_sensor]
 #adc1: PC0
 #adc2: PF10
+[include moonraker_obico_macros.cfg]
