@@ -13,14 +13,14 @@ Also you can get Print files to Print your own New Housing for the Hardware. Ple
 | Probe / ABL Sensor | E-CON: LEVEL | Probe PD13 | If you use BlTouch: (PD13/Sensor) \[PD12/Servo) |
 | Acceleration Sensor Printhead = X E-CON | E-CON: MOSI E-CON: MISO E-CON: SCLK E-CON: CS E-CON: 5V | SPI: SPI1_MOSI SPI: SPI1_MISO SPI: SPI1_SCK SPI: SPI1_CS Motor: 5V | PA7 PA6 PA5 PE10 (Motor: 5V) |
 | Acceleration Sensor Bed = Y ACC-SENSOR | ACC-SENSOR: MOSI ACC-SENSOR: MISO ACC-SENSOR: SCLK ACC-SENSOR: CS ACC-SENSOR: 5V ACC-SENSOR: GND | EXP2: SPI1_MOSI EXP2: SPI1_MISO EXP2: SPI1_SCK EXP2: BTN_EN2 BLTOUCH: 5V J5 → 24V - | PA7 PA6 PA5 PE11 (Motor: 5V) (J5 → 24V -) |
-| Printhead's 24V main | E-CON: 24V | J5 → 24V + | (J5 → 24V +) |
-| Printhead's GND main | E-CON: GND | J5 → 24V - | (J5 → 24V -) |
+| Printhead's 24V main | E-CON: 24V | Motor Fan → 24V + | (Motor Fan → 24V +) |
+| Printhead's GND main | E-CON: GND | Motor Fan → 24V - | (Motor Fan → 24V -) |
 | Part Cooling Fan | E-CON: F0 | FAN1 | FAN0 PF7 |
 | Heatsink Cooling Fan | E-CON: F1 | FAN2 | FAN1 PF9 |
 | Thermistor Hotend | E-CON: T0 | TH1 | PC1 |
 | Cartridge Heater | E-CON: H+ / H- (3x) | HE0+ / HE0- | HE0 PA0 |
 | Thermistor Bed | T1/GND | TB1 | PC0 |
-| Heater Bed | HOTBED + / - | H-BED + / - | BED OUT |
+| Heater Bed | HOTBED + / - | H-BED + / - | BED OUT PF5 |
 | PE / Chassis GND | E-/X-CON: CHASSIS GND | PE-Wire PSU | (PE-Wire PSU) |
 | Filament Runout Sensor | X-CON: FILAMENT/GND | MT_DET1 !PF2/GND | !PF2 M3-Stop |
 | X Limit Switch | X-CON: X LIMIT/GND | X !PF4/GND | !PF4 M1-Stop |
