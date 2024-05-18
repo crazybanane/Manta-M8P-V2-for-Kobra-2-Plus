@@ -10,7 +10,7 @@ Also you can get Print files to Print your own New Housing for the Hardware. Ple
 
 | Part | Pinout Label | Manta M8P v2.0 | Pin / Pin Assignment |
 |----|----|----|----|
-| Probe / ABL Sensor | E-CON: LEVEL | BLTOUCH PD13 | If you use BlTouch: (PD13/Sensor) \[PD12/Servo) |
+| Probe / ABL Sensor | E-CON: LEVEL | Probe PD13 | If you use BlTouch: (PD13/Sensor) \[PD12/Servo) |
 | Acceleration Sensor Printhead = X E-CON | E-CON: MOSI E-CON: MISO E-CON: SCLK E-CON: CS E-CON: 5V | EXP2: SPI1_MOSI EXP2: SPI1_MISO EXP2: SPI1_SCK EXP2: SPI1_CS BLTOUCH: 5V | PA7 PA6 PA5 PE10 (BLTOUCH: 5V) |
 | Acceleration Sensor Bed = Y ACC-SENSOR | ACC-SENSOR: MOSI ACC-SENSOR: MISO ACC-SENSOR: SCLK ACC-SENSOR: CS ACC-SENSOR: 5V ACC-SENSOR: GND | EXP2: SPI1_MOSI EXP2: SPI1_MISO EXP2: SPI1_SCK EXP2: BTN_EN2 BLTOUCH: 5V J5 → 24V - | PA7 PA6 PA5 PE11 (BLTOUCH: 5V) (J5 → 24V -) |
 | Printhead's 24V main | E-CON: 24V | J5 → 24V + | (J5 → 24V +) |
