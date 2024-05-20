@@ -1,3 +1,6 @@
+THIS REPO IS UNDER CONSTRUCTION!!!!
+
+
 Hello,
 
 here you can find the Printer.cfg for an Kobra 2 Plus in combination with an Manta M8P v2.0
@@ -12,7 +15,7 @@ Also you can get Print files to Print your own New Housing for the Hardware. Ple
 |----|----|----|----|
 | Probe / ABL Sensor | E-CON: LEVEL | Probe PD13 | If you use BlTouch: (PD13/Sensor) \[PD12/Servo) |
 | Acceleration Sensor Printhead = X E-CON | E-CON: MOSI E-CON: MISO E-CON: SCLK E-CON: CS E-CON: 5V | SPI: SPI_MOSI SPI: SPI_MISO SPI: SPI_SCK SPI: SPI_CS SPI: 5V SPI_GND| PA7 PA6 PA5 PE10 (SPI: 5V) (SPI: GND)|
-| Acceleration Sensor Bed = Y ACC-SENSOR | ACC-SENSOR: MOSI ACC-SENSOR: MISO ACC-SENSOR: SCLK ACC-SENSOR: CS ACC-SENSOR: 5V ACC-SENSOR: GND | EXP2: SPI1_MOSI EXP2: SPI1_MISO EXP2: SPI1_SCK RGB: PD15 Motor: 5V Motor → Motor - | PA7 PA6 PA5 PD15 (Motor: 5V) (Motor → GND -) |
+| Acceleration Sensor Bed = Y ACC-SENSOR | ACC-SENSOR: MOSI ACC-SENSOR: MISO ACC-SENSOR: SCLK ACC-SENSOR: CS ACC-SENSOR: 5V ACC-SENSOR: GND | SPI: SPI_MOSI SPI: SPI_MISO SPI: SPI_SCK SPI: SPI_CS SPI_5V: 5V SPI_GND: SPI_GND|  RGB: PD15 Motor: 5V Motor → Motor PA7 PA6 PA5 PD15 (Motor: 5V) (Motor → GND -) |
 | Printhead's 24V main | E-CON: 24V | Motor Fan → 24V + | (Motor Fan → 24V +) |
 | Printhead's GND main | E-CON: GND | Motor Fan → 24V - | (Motor Fan → 24V -) |
 | Part Cooling Fan | E-CON: F0 | FAN1 | FAN0 PF7 |
