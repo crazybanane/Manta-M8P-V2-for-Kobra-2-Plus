@@ -15,9 +15,29 @@ Wait about 2-3 mins to boot, you should see with a programm of your choice that 
 
 First you have to log in with root/1234
 
-wait a moment
+wait until terminal is refreshed then logout and login via user biqu pass biqu and now you have to manually install Klipper via Kiauh.
 
-now comes some informations there will be "account user "biqu" was made" or something like this.
+* **Step 1:** \
+To download this script, it is necessary to have git installed. If you don't have git already installed, or if you are unsure, run the following command:
+```shell
+sudo apt-get update && sudo apt-get install git -y
+```
 
-After this you can logout from root and now you have to manually install Klipper via Kiauh.
+* **Step 2:** \
+Once git is installed, use the following command to download KIAUH into your home-directory:
 
+```shell
+cd ~ && git clone https://github.com/dw-0/kiauh.git
+```
+
+* **Step 3:** \
+Finally, start KIAUH by running the next command:
+
+```shell
+./kiauh/kiauh.sh
+```
+
+* **Step 4:** \
+You should now find yourself in the main menu of KIAUH. You will see several actions to choose from depending
+on what you want to do. To choose an action, simply type the corresponding number into the "Perform action"
+prompt and confirm by hitting ENTER.
