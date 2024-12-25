@@ -4,7 +4,7 @@ i got a booting version for CB2 with newer kernel and "latest" (25.12.24) Armbia
 
 I dont take care if you use this Image its under your own risk!
 
-First Download CB2 image
+First Download CB2 image https://drive.google.com/file/d/1ZcWxQnl73ZC4QlOMRiY9tBDAFCI9ZEce/view?usp=sharing
 Burn Image to SD-Card
 Open SD-Card on your Computer goto directory "root" and search for file "not logged in yet"
 
