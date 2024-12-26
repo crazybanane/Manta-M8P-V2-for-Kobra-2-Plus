@@ -1,15 +1,18 @@
 THIS REPO IS UNDER CONSTRUCTION!!!!
 
+UPDATE 26.12.2024
 
 Hello,
 
 here you can find the Printer.cfg for an Kobra 2 Plus in combination with an Manta M8P v2.0
 
-At the moment there is only a untested Version without errors!
+At the moment there is only a tested Version that works for me!
 Test at your own risk!!!
 Updates follows.
 
-Also you can get Print files to Print your own New Housing for the Hardware. Please lookup with your connections and configuration. This is an early Version that is not 100% correct!
+Also you can get Print files to Print for your own New Housing for the Hardware, you find them in "Case Print Files". Please lookup with your connections and configuration. This is an early Version that is not 100% correct!
+
+PLS advice that you can change PINs to your own likeness but then you have to edit the CFG!
 
 | Part | Pinout Label | Manta M8P v2.0 | Pin / Pin Assignment |
 |----|----|----|----|
