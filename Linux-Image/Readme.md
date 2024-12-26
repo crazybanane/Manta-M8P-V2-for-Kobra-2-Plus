@@ -3,9 +3,9 @@ Pre-Alpha State!!!!
 
 Hello, 
 
-i got a booting version for CB2 with newer kernel and "latest" (25.12.24) Armbian Version.
+i got a booting version for CB2 with newer kernel and "latest" (25.02) Armbian Version and kernel 6.12.
 
-I dont take care if you use this Image its under your own risk!
+I dont take care if you use this Image, its under your own risk!
 
 First Download CB2 image https://drive.google.com/file/d/1ZcWxQnl73ZC4QlOMRiY9tBDAFCI9ZEce/view?usp=sharing
 Burn Image to SD-Card
