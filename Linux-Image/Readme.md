@@ -1,3 +1,6 @@
+Pre-Alpha State!!!!
+
+
 Hello, 
 
 i got a booting version for CB2 with newer kernel and "latest" (25.12.24) Armbian Version.
