@@ -6,5 +6,5 @@ The 82mm Fan is for cooling CB2
 You can choose between 2 Layouts
 
 - Case with melt points to hold Board "Forever" 
-- Case with holes to melt in Brass M3 nuts "Detachable" _under Construction_!!!
+- Case with holes to melt in Brass M3 nuts "Detachable" MoBo
 - Lid is not tested yet !!!
